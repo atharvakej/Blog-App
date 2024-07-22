@@ -11,7 +11,7 @@ const app = express();
 const dbURI = process.env.dbURI;
 console.log(dbURI);
 mongoose.connect(dbURI, { useUnifiedTopology: true,useNewUrlParser:true })
-  .then(result => app.listen(3000))
+  .then(result => app.listen(3001))
   .catch(err => console.log(err));
 
 // register view engine
