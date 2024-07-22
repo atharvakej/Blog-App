@@ -6,12 +6,12 @@ require('dotenv').config();
 
 // express app
 const app = express();
-
+const port = process.env.PORT || 3000;
 // connect to mongodb & listen for requests
 const dbURI = process.env.dbURI;
 console.log(dbURI);
 mongoose.connect(dbURI, { useUnifiedTopology: true,useNewUrlParser:true })
-  .then(result => app.listen(3001))
+  .then(result => app.listen(port))
   .catch(err => console.log(err));
 
 // register view engine
