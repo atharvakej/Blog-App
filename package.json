@@ -13,7 +13,6 @@
   },
   "author": "Atharva KJ",
   "license": "ISC",
-  },
   "homepage": "https://github.com/atharvakej/Blog-App#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
